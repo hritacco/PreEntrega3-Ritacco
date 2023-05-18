@@ -1,9 +1,11 @@
 .header__index{
-    display: block;
     .placa1{
-        
-        width: 200px;
-        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        object-fit: cover;
         @include mobile {
             display: none;
         }
