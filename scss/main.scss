@@ -1,0 +1,9 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+@import "./responsive/breakpoints";
+@import "./sections/footer";
+@import "./sections/generales";
+@import "./sections/header";
+@import "./sections/cuerpo";

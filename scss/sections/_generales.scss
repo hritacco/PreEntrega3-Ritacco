@@ -1,0 +1,108 @@
+h1, h2{
+    text-align: center;
+}
+.fadeIn{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.banner{
+    padding: 25px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    img{
+    height: 40vh;
+    width: 100%;
+    background-size:cover;
+    background-repeat:no-repeat ;
+    background-position-y: center;
+    background-position-x: center;
+    box-shadow: 0px 1px 51px 10px rgba(111,214,114,0.78);
+    border-radius: 28px 28px 28px 28px;
+
+    @include tablet {
+        height: 30vh;
+    }
+
+    @include mobile {
+        display: none;
+    }
+
+    }
+}
+.main__contenedor--contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+    @include mobile {
+        textarea{width: 200px;}
+    }
+}
+.img__vianda{
+    width: 100%;
+    height: 25vh;
+}
+.grid__fit, .grid__sintacc, .grid__prote, .grid__veg{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 5% 30% 30% 30% 5%;
+    grid-template-rows: min-content min-content;
+    grid-template-areas:
+    ". titulo titulo titulo ."
+    ". box1 box2 box3 ."
+    ;
+    @include tablet{
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas:
+    ". titulo titulo ."
+    ". box1 box2 ."
+    ". box3 box3 ."
+    ;
+    }
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .box1, .box2, .box3{
+            width: max-content;
+        }
+    }
+}
+.box1{
+    grid-area: box1;
+    margin-bottom: 60px;
+}
+.box2{
+    grid-area: box2;
+    margin-bottom: 60px;
+}
+.box3{
+    grid-area: box3;
+    margin-bottom: 60px;
+}
+.titulo__fit, .titulo__sintacc, .titulo__prote, .titulo__veg{
+    grid-area: titulo;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+.box1:hover{
+    transform: scale(1.2);
+}
+.box2:hover{
+    transform: scale(1.2);
+}
+.box3:hover{
+    transform: scale(1.2);
+}

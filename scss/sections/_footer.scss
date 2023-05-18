@@ -1,0 +1,53 @@
+.footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25vh;
+    width: 100%;
+        .logo__footer{
+        width: 200px;
+        height: 200px;
+        border-radius: 50px 50px 50px 50px
+        }
+        .redes{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 200px;
+        }
+}
+
+@include mobile {
+        .footer{display: none;}
+    footer{
+        .footer__mobile{
+            display: flex;
+            flex-direction: column;
+            height: 10vh;
+            width: 100%;
+            .logo__footer--mobile{
+                width: 100%;
+                height: 10vh;
+            }
+        .redes__mobile{
+            display: flex;
+            background-color: black;
+            justify-content: center;
+        }
+        }
+    }
+}
+
+@include desktop {
+    .footer__mobile{
+        display: none;
+    }
+}
+
+@include tablet {
+    .footer__mobile{
+        display: none;
+    }
+}
