@@ -208,18 +208,21 @@ h1, h2, h3, h4{
     display: none;
 }
 .nosotros__just, .entregas__contenedor{
-    p{
+    p, h4{  
+        width: auto;
         text-align: center;
         margin-left: 20px;
         margin-right: 20px;
     }
     img{
         border-radius: 25px;
-        width: 400px;
+        width: auto;
     }
     .main__nosotros--just1, .main__nosotros--just2, .main__nosotros--just3, .horarios{
+        width: auto;   
         display: flex;
         align-items: center;
+        justify-content: center;
         margin: 20px;
     }
 }

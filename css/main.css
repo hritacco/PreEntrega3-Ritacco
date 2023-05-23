@@ -404,22 +404,27 @@ h1, h2, h3, h4 {
   display: none;
 }
 
-.nosotros__just p, .entregas__contenedor p {
+.nosotros__just p, .nosotros__just h4, .entregas__contenedor p, .entregas__contenedor h4 {
+  width: auto;
   text-align: center;
   margin-left: 20px;
   margin-right: 20px;
 }
 .nosotros__just img, .entregas__contenedor img {
   border-radius: 25px;
-  width: 400px;
+  width: auto;
 }
 .nosotros__just .main__nosotros--just1, .nosotros__just .main__nosotros--just2, .nosotros__just .main__nosotros--just3, .nosotros__just .horarios, .entregas__contenedor .main__nosotros--just1, .entregas__contenedor .main__nosotros--just2, .entregas__contenedor .main__nosotros--just3, .entregas__contenedor .horarios {
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 20px;
 }
 
