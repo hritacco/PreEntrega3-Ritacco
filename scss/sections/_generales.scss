@@ -1,4 +1,4 @@
-h1, h2, h3{
+h1, h2, h3, h4{
     text-align: center;
 }
 .fadeIn{
@@ -136,6 +136,8 @@ h1, h2, h3{
     img{
         width: 500px;
         border-radius: 25px;
+        margin-left: 50px;
+        margin-right: 50px;
         @include mobile {
             width: 300px;
         }
@@ -147,5 +149,96 @@ h1, h2, h3{
             margin-left: 70px;
             margin-right: 70px;
         }
+    }
+}
+.main__index--box3{
+    display: flex;
+    justify-content: space-evenly;
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+    }
+    div{
+        width: 250px;
+        img{
+        width: 150px;
+        margin-left: 50px;
+        }
+    }
+    p{
+        width: 200px;
+    }
+}
+.btn__compra{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    a{  
+        font-weight: bold;
+        font-size: large;
+        color: azure;
+        display:flex;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        width: 200px;
+        height: 70px;
+        background-color: rgb(16, 168, 95);
+        border-radius: 25px;
+    }
+}
+.main__nosotros--desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        width: 700px;
+        text-align: center;
+        @include tablet {
+            width: 400px;
+        }
+        @include mobile {
+            margin: 20px;
+            width: auto;
+        }
+    }
+}  
+.main__nosotros--just2--mobile{
+    display: none;
+}
+.nosotros__just, .entregas__contenedor{
+    p{
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    img{
+        border-radius: 25px;
+        width: 400px;
+    }
+    .main__nosotros--just1, .main__nosotros--just2, .main__nosotros--just3, .horarios{
+        display: flex;
+        align-items: center;
+        margin: 20px;
+    }
+}
+@include tablet {
+    .nosotros__just, .entregas__contenedor{
+        .main__nosotros--just2{display: none;}
+        .main__nosotros--just2--mobile{
+            display: flex;
+        }
+        .main__nosotros--just1, .main__nosotros--just2--mobile, .main__nosotros--just3, .horarios{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+    }
+}
+@include mobile {
+    .nosotros__just, .entregas__contenedor{
+        img{width: 250px;}
     }
 }
