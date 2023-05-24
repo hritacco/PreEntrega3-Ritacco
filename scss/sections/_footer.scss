@@ -1,23 +1,23 @@
-.footer{
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 25vh;
-    width: 100%;
-        .logo__footer{
-        width: 200px;
-        height: 200px;
-        border-radius: 50px 50px 50px 50px
-        }
-        .redes{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    .footer{
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 25vh;
+        width: 100%;
+            .logo__footer{
             width: 200px;
             height: 200px;
+            border-radius: 50px 50px 50px 50px
+            }
+            .redes{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 200px;
+                height: 200px;
+            }
         }
-}
 
 @include mobile {
         .footer{display: none;}

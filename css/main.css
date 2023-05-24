@@ -456,6 +456,23 @@ h1, h2, h3, h4 {
     width: 250px;
   }
 }
+.notfound {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.notfound img {
+  width: 800px;
+  margin-bottom: 50px;
+}
+
 .header__index .placa1 {
   display: -webkit-box;
   display: -ms-flexbox;

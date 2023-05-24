@@ -116,7 +116,7 @@ h1, h2, h3, h4{
         margin: 20px;
         width: 200px;
         padding: 10px;
-        border: solid rgb(40, 179, 47);
+        border: solid $buttonColor;
         border-radius: 25px;
         p{
             text-align: center;
@@ -184,7 +184,7 @@ h1, h2, h3, h4{
         justify-items: center;
         width: 200px;
         height: 70px;
-        background-color: rgb(16, 168, 95);
+        background-color: $buttonColor;
         border-radius: 25px;
     }
 }
@@ -243,5 +243,15 @@ h1, h2, h3, h4{
 @include mobile {
     .nosotros__just, .entregas__contenedor{
         img{width: 250px;}
+    }
+}
+.notfound{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 800px;
+        margin-bottom: 50px;
     }
 }
