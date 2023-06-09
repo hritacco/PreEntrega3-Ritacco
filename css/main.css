@@ -164,7 +164,7 @@ h1, h2, h3, h4 {
 .grid__fit, .grid__sintacc, .grid__prote, .grid__veg {
   display: grid;
   justify-items: center;
-  grid-template-columns: 5% 30% 30% 30% 5%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: -webkit-min-content -webkit-min-content;
   grid-template-rows: min-content min-content;
   grid-template-areas: ". titulo titulo titulo ." ". box1 box2 box3 .";
@@ -257,7 +257,7 @@ h1, h2, h3, h4 {
   margin: 20px;
   width: 200px;
   padding: 10px;
-  border: solid rgb(40, 179, 47);
+  border: solid rgb(16, 168, 95);
   border-radius: 25px;
 }
 .main__index--box1 div p {
