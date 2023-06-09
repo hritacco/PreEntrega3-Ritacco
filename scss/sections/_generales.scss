@@ -54,7 +54,7 @@ h1, h2, h3, h4{
 .grid__fit, .grid__sintacc, .grid__prote, .grid__veg{
     display: grid;
     justify-items: center;
-    grid-template-columns: 5% 30% 30% 30% 5%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: min-content min-content;
     grid-template-areas:
     ". titulo titulo titulo ."
